@@ -17,4 +17,4 @@ do
 done
 
 # crontab 配置
-# 0 0 * * * /bin/sh /home/username/script/cut_log.sh
+# 0 0 * * * /bin/sh /usr/local/hysrv/shell/cut_log.sh
