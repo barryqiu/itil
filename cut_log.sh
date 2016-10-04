@@ -4,7 +4,7 @@ date=$(date -d "yesterday" +%Y%m%d)
 # 一周前
 weekbefore=$(date -d '7 day ago' +%Y%m%d)
 # 需要分割的日志文件名绝对路径，可以配置多个
-targets="/opt/cloud_phone_bi/log/gunicorn.log /root/gohome/src/forward_server/log /usr/local/hysrv/nginx/logs/access.log /usr/local/hysrv/nginx/logs/access.log"
+targets="/opt/cloud_phone_bi/log/gunicorn.log /root/gohome/src/forward_server/log/info.log /usr/local/hysrv/nginx/logs/access.log /usr/local/hysrv/nginx/logs/error.log"
 for target in ${targets}
 do
         file=`basename ${target}`
